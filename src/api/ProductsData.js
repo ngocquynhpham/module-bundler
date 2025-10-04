@@ -1,4 +1,3 @@
-// Dữ liệu này được lưu ở một nơi tập trung để dễ quản lý và tái sử dụng.
 export const allProducts = [
     { id: 1, name: 'Gấu Bông Mèo Nằm Lười', price: '250.000đ', image: 'https://placehold.co/600x600/f8c3c8/663349?text=Mèo+Lười', description: 'Chú mèo bông siêu mềm mịn, nằm lười biếng chỉ chờ bạn ôm. Một người bạn đồng hành tuyệt vời cho những giấc mơ ngọt ngào.' },
     { id: 2, name: 'Bình Nước Cầu Vồng Pastel', price: '180.000đ', image: 'https://placehold.co/600x600/c7ceea/663349?text=Bình+Nước', description: 'Mang cả cầu vồng theo bên bạn mỗi ngày với chiếc bình nước màu pastel xinh xắn. Giữ nhiệt tốt và an toàn cho sức khỏe.' },
