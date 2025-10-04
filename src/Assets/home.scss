@@ -1,0 +1,79 @@
+// 🎨 Colors
+$primary-color: #ff6b81; 
+$primary-color-hover: #e65268;
+$secondary-color: #5d4a66;
+$text-light: #7a6a85;
+$bg-gradient-start: #fce3ec;
+$bg-gradient-end: #fde4e4;
+$white: #ffffff;
+
+// ✨ Shadows
+$shadow-light: 0 4px 15px rgba(0, 0, 0, 0.07);
+$shadow-medium: 0 8px 25px rgba(0, 0, 0, 0.1);
+$shadow-banner: 0 10px 20px rgba(0, 0, 0, 0.05);
+
+// 🖋 Fonts
+$font-main: "Mochiy Pop One", sans-serif;
+
+/* --- Banner Styles --- */
+.hero-banner {
+  background: linear-gradient(135deg, $bg-gradient-start, $bg-gradient-end);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+  box-shadow: $shadow-banner;
+
+  .banner-title {
+    font-family: $font-main;
+    font-size: 2.5rem;
+    color: $secondary-color;
+    margin-bottom: 10px;
+  }
+
+  .banner-subtitle {
+    font-size: 1.2rem;
+    color: $text-light;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+.product-card {
+  background-color: $white;
+  border-radius: 15px;
+  box-shadow: $shadow-light;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: $shadow-medium;
+  }
+
+  .product-name {
+    color: $secondary-color;
+  }
+
+  .product-price {
+    color: $primary-color;
+  }
+
+  .add-to-cart-btn {
+    background-color: $primary-color;
+    color: $white;
+    min-height: 40px;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+
+    &:hover {
+      background-color: $primary-color-hover;
+    }
+  }
+}
